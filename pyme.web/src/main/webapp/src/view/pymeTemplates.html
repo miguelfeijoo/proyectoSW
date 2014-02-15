@@ -29,6 +29,27 @@
     </div>
 </script>
 
+<script type="text/template" id="pymeSearch">
+    <div class="form-group">
+    <form role="form" id="<%= componentId %>-pymeForm">
+    <% if(pyme.id) {%>
+    <input type="hidden" name="id" value="<%= pyme.id %>"/>
+    <% }%>
+		<div class="form-group" >
+		<label for="pymeName">pymeName</label>
+    	<input type="text" class="form-control" id="pymeName" name="pymeName" placeholder="Enter value" value="<%= pyme.get('name') %>"/>	
+		</div>
+ 
+    </form>
+    <button id="<%= componentId%>-pyme-searchButton" 
+        onclick="Backbone.trigger('<%= componentId %>-pyme-search',{}); return false" 
+        type="button" class="btn btn-default">
+            <span class="glyphicon glyphicon-search"></span> Search
+    </button>
+    </div>
+ 
+</script>
+
 <script type="text/template" id="pyme">
     <div class="form-group">
     <form role="form" id="<%= componentId %>-pymeForm">
