@@ -21,7 +21,7 @@ public class PymeService extends _PymeService
     
     @POST
     @Path("/search")
-    public List<PymeDTO> searchUser(PymeDTO pyme)
+    public List<PymeDTO> searchPyme(PymeDTO pyme)
     {
         return this.pymeLogicService.searchPyme(pyme);
     }

@@ -7,5 +7,4 @@ import java.util.List;
 public interface IPymePersistence extends _IPymePersistence {
 
     public List<PymeDTO> searchPyme(PymeDTO pyme);
-
 }

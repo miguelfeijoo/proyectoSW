@@ -36,10 +36,11 @@ define(['controller/_pymeController'], function() {
             var self = this;
             var model = $('#' + this.componentId + '-pymeForm').serializeObject();
             this.currentPymeModel.set(model);
-            App.Delegate.UserDelegate.search(self.currentPymeModel, function(data) {
+            App.Delegate.PymeDelegate.search(self.currentPymeModel, function(data) {
                 self.pymeModelList=new App.Model.PymeList();
                 _.each(data,function(d){
                     var model=new App.Model.PymeModel(d);
+                    model.name = d;
                     self.pymeModelList.models.push(model);
                 });
                 self._renderSearch(params);
