@@ -11,6 +11,15 @@ public abstract class _ProductDTO {
 	private Long id;
 	private String name;
 	private Long value;
+        private String imagen;
+
+    public String getImagen() {
+        return imagen;
+    }
+
+    public void setImagen(String image) {
+        this.imagen = image;
+    }
 
 	public Long getId() {
 		return id;

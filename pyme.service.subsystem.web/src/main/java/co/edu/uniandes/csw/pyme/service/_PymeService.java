@@ -32,17 +32,19 @@ public abstract class _PymeService {
 	
 	@GET
 	public List<PymeDTO> getPymes(){
+                System.out.println("Este es el handler de el Rquest");
 		return pymeLogicService.getPymes();
 	}
 	
 	@GET
 	@Path("{id}")
 	public PymeDTO getPyme(@PathParam("id") Long id){
+                System.out.println("Este es el handler de el Rquest em realidad");
 		return pymeLogicService.getPyme(id);
 	}
 	
 	@PUT
-    @Path("{id}")
+        @Path("{id}")
 	public void updatePyme(@PathParam("id") Long id, PymeDTO pyme){
 		pymeLogicService.updatePyme(pyme);
 	}

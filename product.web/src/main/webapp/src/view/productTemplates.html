@@ -6,7 +6,9 @@
     <tr>
 		 <th>name</th>
 		 <th>value</th>
-                 <th>imagen</th>
+                 <th>brand</th>
+                 <th>origin</th>
+                <th>imagen</th>
 
                  
     <th>Actions</th>
@@ -17,7 +19,8 @@
     <tr>
 		<td><%= htmlEncode(product.getDisplay('name')) %></td>
 		<td><%= htmlEncode(product.getDisplay('value')) %></td>
-                
+                <td><%= htmlEncode(product.getDisplay('brand')) %></td>
+                <td><%= htmlEncode(product.getDisplay('origin')) %></td>
                 <td><a href ="<%= htmlEncode(product.getDisplay('imagen')) %>" target = "blank"><img src="<%= htmlEncode(product.getDisplay('imagen')) %>" width="150px"/></td>
                 
 
@@ -49,6 +52,16 @@
 		<div class="form-group" >
 		<label for="value">value</label>
     	<input type="text" class="form-control" id="value" name="value" placeholder="Enter value" value="<%= product.get('value') %>"/>	
+		</div>
+                
+                <div class="form-group" >
+		<label for="brand">brand</label>
+    	<input type="text" class="form-control" id="brand" name="brand" placeholder="Enter value" value="<%= product.get('brand') %>"/>	
+		</div>
+                
+                 <div class="form-group" >
+		<label for="origin">origin</label>
+    	<input type="text" class="form-control" id="origin" name="origin" placeholder="Enter value" value="<%= product.get('origin') %>"/>	
 		</div>
                 
                 <div class="form-group" >

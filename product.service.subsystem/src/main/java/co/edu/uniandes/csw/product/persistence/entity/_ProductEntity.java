@@ -17,6 +17,15 @@ public abstract class _ProductEntity {
 	private Long id;
 	private String name;
 	private Long value;
+        private String imagen;
+
+    public String getImagen() {
+        return imagen;
+    }
+
+    public void setImagen(String imagen) {
+        this.imagen = imagen;
+    }
 
 	public Long getId(){
 		return id;

@@ -5,6 +5,10 @@ define([], function() {
 		 'name' : ''
  ,  
 		 'cc' : ''
+                 ,
+                 'address':''
+                 ,
+                 'phone':''
         },
         initialize: function() {
         },
@@ -21,3 +25,5 @@ define([], function() {
     });
     return App.Model._ClientModel;
 });
+
+

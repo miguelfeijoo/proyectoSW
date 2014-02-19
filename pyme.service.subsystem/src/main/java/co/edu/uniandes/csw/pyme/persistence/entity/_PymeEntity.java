@@ -17,6 +17,24 @@ public abstract class _PymeEntity {
 	@GeneratedValue(generator = "Pyme")
 	private Long id;
 	private String description;
+        private String description2;
+        private String name2;
+
+    public String getDescription2() {
+        return description2;
+    }
+
+    public void setDescription2(String description2) {
+        this.description2 = description2;
+    }
+
+    public String getName2() {
+        return name2;
+    }
+
+    public void setName2(String name2) {
+        this.name2 = name2;
+    }
 
 	public String getName(){
 		return name;

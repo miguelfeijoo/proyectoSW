@@ -16,6 +16,8 @@ public abstract class _PymeConverter {
 				dto.setName(entity.getName());
 				dto.setId(entity.getId());
 				dto.setDescription(entity.getDescription());
+                                dto.setDescription2(entity.getDescription2());
+                                dto.setName2(entity.getName2());
 			return dto;
 		}else{
 			return null;
@@ -28,6 +30,8 @@ public abstract class _PymeConverter {
 			entity.setName(dto.getName());
 			entity.setId(dto.getId());
 			entity.setDescription(dto.getDescription());
+                        entity.setDescription2(dto.getDescription2());
+                        entity.setName2(dto.getName2());
 			return entity;
 		}else {
 			return null;

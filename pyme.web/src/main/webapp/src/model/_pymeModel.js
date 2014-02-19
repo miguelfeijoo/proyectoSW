@@ -3,12 +3,15 @@ define([], function() {
         defaults: {
  
 		 'name' : ''
- ,  
-		 'description' : ''
+,  		 'description' : ''              
+,                'phone' : ''
+,                'mail':''
+                 
         },
         initialize: function() {
         },
         getDisplay: function(name) {
+         console.log("Entro a hacer el request LOOOOOOOOL");
          return this.get(name);
         }
     });
